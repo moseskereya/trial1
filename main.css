@@ -1,0 +1,261 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.overlay {  
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top:0;
+    left: 0;
+    background-color: rgba(190, 106, 37, 0.5); 
+    background-color: 44, 62, 80;
+    overflow-x: hidden; 
+    transition:3s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%; 
+    text-align: center;
+    margin-top: 30px; 
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #f5f3f3;
+    display: block; 
+    transition: 0.9s; 
+    transition-delay: .9s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #000;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 8px;
+    right: 2px;
+    font-size: 30px;
+  }
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 18px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+    .heading-1 h1{
+    font-size: 18px;
+    text-align: center;
+    }
+  }
+  @media screen and (max-width: 450px) {
+  .header{
+    height: 10vh;
+  }
+  }
+  .header{
+      display: flex;
+      justify-content: space-around;
+      background-color: #f1f1f1;
+  }
+  .heading h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: #000;
+      font-size: 25px;
+  }
+  .heading span{
+      color: orange;
+  }
+  .heading-1{
+      display: flex;
+      justify-content: center;
+      align-content:center;
+  }
+  .heading-1 h1{
+      text-transform: uppercase;
+      color: orange;
+      font-family: 'Julius Sans One', sans-serif;
+  }
+  .cart{
+    line-height:0px;
+  }
+  .cart{
+    position: relative;
+    right: 0;
+    top: 30px;
+  }
+  .div{
+    height: 100%;
+    width: 0;
+    position:fixed;
+    z-index: 1;
+    right: 0;
+    top: 160px;
+    display: block;
+    justify-content: center;
+    background-color: rgba(156, 143, 132, 0.5); 
+    background-color: 44, 62, 80;
+    overflow-x: hidden; 
+    transition: 2s ease-out;
+  }
+  .cart .fas{
+    font-size: 20px;
+    color: orange;
+  }
+  .div input{
+    margin: 30px;
+    padding: 20px 0;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255 0.5);
+    height: 80px;
+    color: rgb(0, 0, 0);
+  }
+  .clear{
+   padding: 10px 20px;
+   margin: 0 30px;
+   background-color: orange;
+   color: rgb(255, 255, 255);
+  }
+  .overplay{
+    padding: 10px 20px;
+    outline: none;
+    background-color: rgb(8, 8, 8);
+    color: #fff;
+  }
+  .container{
+    max-width:1000px;
+    position: relative;
+    margin:20px auto;
+    }
+    .mySlides{
+        display: none;
+    }
+    .text {
+        color: #000000;
+        font-size: 25px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        font-family: 'Open Sans Condensed' sans-serif;
+        top: 50%;
+      }
+      
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+      
+      @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+      .main-class{
+        display: flex;
+        padding: 20px 0;
+        justify-content: center;
+        flex-flow: wrap;
+    }
+    .items{
+        width: 300px;
+        height: 300px;
+        position: relative;
+        padding: 10px;
+        opacity: .8;
+    }
+    .items:hover .btn{
+    opacity: 9;
+    visibility:visible;
+  }
+    .items img{
+        width: 100%;
+        height: 80%;
+    }
+  
+    .content{
+      text-align: center;
+      text-transform: capitalize;
+      font-family: 'Open Sans Condensed', sans-serif;
+      color: #000;
+    }
+  .content span{
+      font-size: 24px;
+      font-weight: 500;
+      color: orange;
+  }
+  .btn{
+      position: absolute;
+       right: 10px;
+       top: 10px;
+       padding: 10px 20px;
+      outline: none;
+      border:none;
+      background-color: #f80101;
+      color: rgb(187, 185, 185);
+      transition: .4s ease;
+      visibility: hidden;
+  }
+
+  @media screen and (max-width:450px){
+    .items{
+      width: 85%;
+      height: 200px;
+    }
+    .items img{
+      width: 100%;
+      height: 100%;
+    }
+    .container{
+      width: 80%;
+    }
+    .heading-1{
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+  .container2{
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+    color: #000000;
+  }
+  .social{
+    display: inline-block;
+    position: fixed;
+    overflow: hidden;
+    left:0%;
+    transform: rotate(-90deg);
+    top: 40%;
+  }
+  .social .fab{
+    font-size: 30px;
+    transform: rotate(90deg)
+  }
+  @media(max-width:768px){
+    .social{
+      display: none;
+    }
+  }
